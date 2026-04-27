@@ -1,4 +1,43 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* HEADER / HERO */
+header.hero {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* WHATSAPP FLOTANTE */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -16,107 +55,7 @@
     background-color: #1ebe5d;
 }
 
-
-.contenedor-servicios {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
-} 
-
-.card {
-background-color: #dd8212;
-padding: 20px;
-border-radius: 250px;
-}
-
-
-header {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #f46c05;
-}
-
-header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #22c55e;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #16a34a;
-}
-
-
-section {
-    padding: 40px 20px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.card {
-    margin-bottom: 15px;
-}
-
-
-@media (max-width: 768px) {
-
-    .contenedor-servicios {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    header p {
-        font-size: 16px;
-    }
-
-}
-
-header {
-    padding: 60px 15px;
-}
-
-section {
-    padding: 30px 15px;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-header {
-    background: #0a2540;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
+/* NAV */
 nav {
     background: #133b5c;
     display: flex;
@@ -133,67 +72,23 @@ nav a:hover {
     background: #1f5f8b;
 }
 
-section {
-    padding: 20px;
-}
-
-.servicio {
-    margin-bottom: 20px;
-}
-
-.servicio img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-@media (min-width: 768px) {
-    .servicio {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .servicio img {
-        width: 300px;
-    }
-}
-
-.contenedor-servicios {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-@media (min-width: 768px) {
-    .contenedor-servicios {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
+/* SECCIONES */
 section {
     padding: 40px 20px;
     text-align: center;
 }
 
-/* CARDS */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* SERVICIOS */
 .contenedor-servicios {
     display: grid;
     gap: 20px;
 }
 
+/* CARDS */
 .card {
     background: white;
     border-radius: 10px;
@@ -208,19 +103,14 @@ section {
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
+ object-position: center;
 }
 
+/* NOSOTROS */
 .nosotros {
     background: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.nosotros h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
 }
 
 .nosotros-box {
@@ -246,22 +136,10 @@ section {
     font-weight: bold;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-    .valores {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
+/* CONTACTO */
 .contacto {
     background: #0a2540;
     color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.contacto h2 {
-    margin-bottom: 30px;
 }
 
 .contacto-box {
@@ -274,16 +152,22 @@ section {
     background: rgba(255,255,255,0.1);
     padding: 15px;
     border-radius: 10px;
-    font-size: 1.1rem;
 }
 
 .item span {
-    display: block;
     font-size: 1.5rem;
 }
 
-/* Desktop */
+/* RESPONSIVE */
 @media (min-width: 768px) {
+    .contenedor-servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .valores {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .contacto-box {
         grid-template-columns: repeat(3, 1fr);
     }
