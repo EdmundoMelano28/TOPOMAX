@@ -481,3 +481,44 @@ header.hero .btn {
 .card p {
     flex-grow: 1;
 }
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* AVISO DE PRIVACIDAD */
+
+.aviso-privacidad {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.7;
+}
+
+.aviso-privacidad h1,
+.aviso-privacidad h2 {
+    color: #0a2540;
+    margin-bottom: 15px;
+}
+
+.aviso-privacidad p {
+    margin-bottom: 20px;
+}
