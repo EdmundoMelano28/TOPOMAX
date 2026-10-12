@@ -1,0 +1,483 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER / HERO */
+header.hero {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+/* NAV */
+nav {
+    background: #133b5c;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #1f5f8b;
+}
+
+/* SECCIONES */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* SERVICIOS */
+.contenedor-servicios {
+    display: grid;
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+ object-position: center;
+}
+
+/* NOSOTROS */
+.nosotros {
+    background: white;
+}
+
+.nosotros-box {
+    max-width: 700px;
+    margin: auto;
+    background: #f5f7fa;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.valores {
+    margin-top: 30px;
+    display: grid;
+    gap: 10px;
+}
+
+.valor {
+    background: #0a2540;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* CONTACTO */
+.contacto {
+    background: #0a2540;
+    color: white;
+}
+
+.contacto-box {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.item {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.item span {
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .contenedor-servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .valores {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contacto-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* =====================================
+   IDENTIDAD VISUAL OFICIAL DE TOPOMAX
+===================================== */
+
+:root {
+    --topomax-orange: #F58220;
+    --topomax-black: #222222;
+    --topomax-gray: #777777;
+    --topomax-light: #F3F3F3;
+    --topomax-white: #FFFFFF;
+}
+
+/* LOGOTIPO */
+.logo {
+    display: block;
+    width: min(280px, 85%);
+    height: auto;
+    margin: 0 auto 24px;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* PORTADA */
+header.hero {
+    background: var(--topomax-white);
+    color: var(--topomax-black);
+    border-bottom: 5px solid var(--topomax-orange);
+}
+
+header.hero h1 {
+    color: var(--topomax-black);
+}
+
+header.hero p {
+    color: var(--topomax-gray);
+}
+
+/* BOTÓN DE CONTACTO */
+.btn {
+    background-color: var(--topomax-orange);
+    color: var(--topomax-black);
+    border: 2px solid var(--topomax-orange);
+}
+
+.btn:hover {
+    background-color: var(--topomax-black);
+    color: var(--topomax-white);
+    border-color: var(--topomax-black);
+}
+
+/* NAVEGACIÓN */
+nav {
+    background: var(--topomax-black);
+}
+
+nav a {
+    color: var(--topomax-white);
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--topomax-black);
+    background: var(--topomax-orange);
+}
+
+/* TÍTULOS Y SERVICIOS */
+h2,
+.card h3 {
+    color: var(--topomax-black);
+}
+
+.contenedor-servicios {
+    gap: 24px;
+}
+
+.card {
+    border: 1px solid #E2E2E2;
+}
+
+.card:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    padding-inline: 12px;
+}
+
+.card p {
+    padding-inline: 12px;
+    color: var(--topomax-gray);
+}
+
+/* NOSOTROS Y VALORES */
+.nosotros {
+    background: var(--topomax-light);
+}
+
+.nosotros-box {
+    background: var(--topomax-white);
+    border-top: 4px solid var(--topomax-orange);
+}
+
+.valor {
+    background: var(--topomax-black);
+    border-left: 4px solid var(--topomax-orange);
+}
+
+/* OBJETIVO PROFESIONAL */
+section:not(.nosotros):not(.contacto):not(.hero):not(#servicios) {
+    background-color: var(--topomax-white);
+}
+
+/* CONTACTO */
+.contacto {
+    background: var(--topomax-black);
+    color: var(--topomax-white);
+    border-top: 5px solid var(--topomax-orange);
+}
+
+.contacto h2 {
+    color: var(--topomax-white);
+}
+
+.item {
+    background: #333333;
+    border-bottom: 3px solid var(--topomax-orange);
+}
+
+/* BOTÓN FLOTANTE: CONSERVAMOS EL VERDE DE WHATSAPP */
+.whatsapp {
+    background-color: #25D366;
+    color: var(--topomax-white);
+}
+
+.whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 600px) {
+    .logo {
+        width: min(230px, 85%);
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =====================================
+   MEJORA DE PORTADA TOPOMAX
+===================================== */
+
+header.hero {
+    padding: 35px 20px 45px;
+    background: #FFFFFF;
+    border-bottom: 4px solid #F58220;
+}
+
+header.hero .overlay {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header.hero .logo {
+    width: min(280px, 75%);
+    margin: 0 auto 18px;
+}
+
+header.hero p {
+    margin: 12px 0 22px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+header.hero .btn {
+    min-width: 220px;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* =====================================
+   MEJORA DE LA SECCIÓN DE SERVICIOS
+===================================== */
+
+#servicios {
+    padding: 48px 24px 60px;
+    background: #F7F7F7;
+}
+
+#servicios h2 {
+    margin: 0 0 28px;
+    font-size: 1.8rem;
+}
+
+.contenedor-servicios {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.card {
+    min-width: 0;
+    padding-bottom: 18px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.card h3 {
+    margin: 18px 12px 10px;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.card p {
+    margin: 0 12px;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Las imágenes nuevas se adaptarán a este formato */
+.card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    background: #E8E8E8;
+}
+
+/* =====================================
+   AJUSTES PARA CELULARES
+===================================== */
+
+@media (max-width: 767px) {
+    header.hero {
+        padding: 28px 16px 35px;
+    }
+
+    header.hero .logo {
+        width: min(240px, 80%);
+    }
+
+    #servicios {
+        padding: 35px 16px;
+    }
+
+    .contenedor-servicios {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+}
+
+
+/* BOTONES DE COTIZACIÓN EN LAS TARJETAS */
+
+.service-button {
+    display: inline-block;
+    margin: 18px 12px 0;
+    padding: 11px 18px;
+    border: 2px solid #F58220;
+    border-radius: 6px;
+    background: #F58220;
+    color: #222222;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.service-button:hover {
+    background: #222222;
+    border-color: #222222;
+    color: #FFFFFF;
+}
+
+.service-button:focus-visible {
+    outline: 3px solid #F58220;
+    outline-offset: 3px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    flex-grow: 1;
+}
