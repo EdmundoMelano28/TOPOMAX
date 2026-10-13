@@ -522,3 +522,31 @@ footer a:hover {
 .aviso-privacidad p {
     margin-bottom: 20px;
 }
+
+.contacto-contenedores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.contacto-contenedores > div {
+    width: 100%;
+    min-height: 235px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #303030;
+    border-bottom: 3px solid #ff851b;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contacto-contenedores {
+        grid-template-columns: 1fr;
+    }
+}
